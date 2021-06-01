@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FypDemo</string>
+
+    <string name="btn_persistent">Persistent Bottom Sheet</string>
+    <string name="btn_modal">Modal Bottom Sheet</string>
+    <string name="tv_swipeup_des">Pull up to start</string>
+    <string name="tv_title">Welcome to</string>
+    <string name="bt_signup">Create Account</string>
+    <string name="bt_signin"> Log in</string>
+    <string name="tv_signin_des">Already have an account?</string>
+    <string name="tv_description">By tapping Create Account, you agree to the Term of Service &amp; Privacy Policy</string>
+    <string name="tv_signin_back">Back to</string>
+
+    <string name="tv_titleVarification">Phone number varification</string>
+    <string name="tv_phone_number">Phone number</string>
+    <string name="bt_get_otp">Get OTP</string>
+    <string name="tv_titleOtp">Enter OTP here</string>
+    <string name="tvOtp">OTP</string>
+    <string name="tvResendOtp">Resend OTP</string>
+    <string name="btVarifiy">Verify</string>
+    <string name="tv_varify_success">Your Phone number verification is successfully done!</string>
+
+</resources>

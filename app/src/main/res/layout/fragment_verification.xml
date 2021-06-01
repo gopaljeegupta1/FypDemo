@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.VerificationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_34"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_titleOtp"
+                style="@style/TitleHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_titleOtp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPhone"
+                style="@style/tvTitleNormal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/tvOtp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titleOtp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhone">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtp1"
+                    style="@style/etOtp"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtp2"
+                    style="@style/etOtp"
+                    android:layout_marginLeft="@dimen/dimen_16"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtp3"
+                    style="@style/etOtp"
+                    android:layout_marginLeft="@dimen/dimen_16"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtp4"
+                    style="@style/etOtp"
+                    android:layout_marginLeft="@dimen/dimen_16"
+                    android:layout_weight="1"
+                    android:text="1" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTimer"
+                    style="@style/tvTitleNormal"
+                    android:layout_weight=".5"
+                    android:text="1.59 Remaining"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/llNumber" />
+
+
+                <TextView
+                    android:id="@+id/tvResendOtp"
+                    style="@style/tvTitleNormal"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:text="@string/tvResendOtp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.gopal.fypdemo.utils.MyKeyboard
+            android:id="@+id/keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llOne"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
